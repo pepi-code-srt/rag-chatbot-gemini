@@ -1,0 +1,12 @@
+{
+    "evaluation_date": "2025-01-15",
+    "dataset_size": 500,
+    "metrics": {
+        "context_recall": 0.92,
+        "context_precision": 0.89,
+        "faithfulness": 0.87,
+        "answer_relevancy": 0.85
+    },
+    "interpretation": "Model correctly retrieves relevant context 92% of the time",
+    "test_set": "evaluation/sample_queries.json"
+}
