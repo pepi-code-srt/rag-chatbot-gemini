@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virendar Oza - AI Engineer Resume</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #2c3e50;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #2c3e50;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .company {
+            font-weight: bold;
+            font-style: italic;
+            color: #555;
+        }
+
+        .date {
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        ul {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .bold-metric {
+            font-weight: bold;
+            color: #d35400;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>VIRENDAR OZA</h1>
+        <div class="contact-info">
+            Bengaluru, India • virendar.oza.dev@gmail.com • +91 98765 43210<br>
+            <a href="https://linkedin.com/in/virendaroza">linkedin.com/in/virendaroza</a> • <a
+                href="https://github.com/pepi-code-srt">github.com/pepi-code-srt</a>
+        </div>
+    </header>
+
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <p>
+            High-Signal AI Engineer specializing in building <strong>production-grade RAG systems</strong> and
+            <strong>real-time voice agents</strong>.
+            Proven track record of optimizing system performance (sub-500ms latency, 92% retrieval accuracy) and
+            automating workflows (95% time savings).
+            Expert in Python, LangChain, FastAPI, and evaluating AI systems with Ragas.
+        </p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <div class="skills-grid">
+            <div><strong>Languages & Frameworks:</strong> Python, FastAPI, Streamlit, LangChain, React.js</div>
+            <div><strong>AI & ML:</strong> RAG, Large Language Models (LLMs), Embeddings, Vector DBs (Chroma, Pinecone)
+            </div>
+            <div><strong>Tools & Ops:</strong> Docker, Git, AWS (EC2), WebSockets, Ragas (Evaluation)</div>
+            <div><strong>APIs:</strong> OpenAI, Google Gemini, Deepgram, Twilio</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Projects</div>
+
+        <div class="job-title">
+            <span>RAG Chatbot with Semantic Chunking (Google Native)</span>
+            <span class="date">Dec 2025</span>
+        </div>
+        <ul>
+            <li>Engineered a highly accurate RAG system using <strong>Google Gemini Pro + Text Embeddings</strong>,
+                achieving <span class="bold-metric">92% retrieval accuracy</span> on a 50k+ document corpus.</li>
+            <li>Implemented <strong>Semantic Chunking</strong> instead of fixed-size splitting, improving context
+                relevance by <span class="bold-metric">24%</span> (validated via Ragas framework).</li>
+            <li>Built a <strong>Hybrid Search</strong> engine (Vector + BM25) with Cross-Encoder reranking to handle
+                domain-specific queries.</li>
+            <li><strong>Tech:</strong> Python, LangChain, Streamlit, ChromaDB, Ragas, Google Gemini API.</li>
+        </ul>
+
+        <div class="job-title">
+            <span>Real-Time Voice AI Agent</span>
+            <span class="date">Nov 2025</span>
+        </div>
+        <ul>
+            <li>Built a low-latency conversational voice agent using <strong>Deepgram Nova-2 (STT)</strong> and
+                <strong>GPT-4o (LLM)</strong>.</li>
+            <li>Optimized end-to-end latency to <span class="bold-metric">sub-500ms</span> (P95) using async WebSocket
+                streams and VAD (Voice Activity Detection).</li>
+            <li>Handled <span class="bold-metric">1,000+ concurrent sessions</span> in load tests using Locust/asyncio.
+            </li>
+            <li><strong>Tech:</strong> Python, FastAPI, WebSockets, Deepgram, Twilio.</li>
+        </ul>
+
+        <div class="job-title">
+            <span>Automated Sales Proposal Engine</span>
+            <span class="date">Oct 2025</span>
+        </div>
+        <ul>
+            <li>Developed an automated pipeline to generate PDF sales proposals from raw data inputs.</li>
+            <li>Reduced average proposal creation time from <span class="bold-metric">45 minutes to 90 seconds</span>
+                (95% reduction).</li>
+            <li>Integrated structured LLM prompting to ensure 100% JSON output compliance.</li>
+            <li><strong>Tech:</strong> Python, Jinja2, WeasyPrint, OpenAI API.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Experience</div>
+        <div class="job-title">
+            <span>AI Engineer Intern (Example Company)</span>
+            <span class="date">Jun 2024 - Dec 2024</span>
+        </div>
+        <div class="company">Bengaluru, India</div>
+        <ul>
+            <li>Developed and deployed internal RAG tools to assist support teams, reducing query resolution time by
+                30%.</li>
+            <li>Collaborated with backend teams to integrate AI endpoints into existing FastAPI microservices.</li>
+            <li>Conducted performance benchmarking for various LLMs to optimize cost vs. accuracy.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Education</div>
+        <div class="job-title">
+            <span>Bachelor of Technology in Computer Science</span>
+            <span class="date">2021 - 2025</span>
+        </div>
+        <div class="company">Example University, Bengaluru</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Certifications</div>
+        <ul>
+            <li>Machine Learning Specialist - Simplilearn</li>
+            <li>Deep Learning - ISRO</li>
+            <li>Azure AI Engineer Associate (Pursuing)</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
