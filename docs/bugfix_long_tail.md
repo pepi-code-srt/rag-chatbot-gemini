@@ -27,18 +27,22 @@ def retrieve_with_expansion(query):
     
     return results_1
 ```
+Validation
+Before fix:
 
-## Validation
-**Before fix:**
-- Long-tail success rate: 64%
-- Average relevance for niche queries: 0.55
+Long-tail success rate: 64%
 
-**After fix:**
-- Long-tail success rate: 78%
-- Average relevance: 0.72
+Average relevance for niche queries: 0.55
 
-**Overall impact:** +14% improvement for sparse queries
+After fix:
 
-## Implementation
-File: `src/retrieval.py`
+Long-tail success rate: 78%
+
+Average relevance: 0.72
+
+Overall impact: +14% improvement for sparse queries
+
+Implementation
+File: src/retrieval.py (lines 80-120)
+
 Tests: See evaluation results for queries with 2+ hops

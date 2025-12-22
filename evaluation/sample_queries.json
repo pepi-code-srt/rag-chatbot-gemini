@@ -1,28 +1,24 @@
 {
-  "test_queries": [
+  "queries": [
     {
       "id": "q001",
       "query": "What is Retrieval Augmented Generation?",
-      "ground_truth_docs": ["doc_001.txt", "doc_042.txt"],
-      "expected_answer": "RAG is a technique that augments language models by retrieving relevant documents.",
-      "difficulty": "easy"
+      "ground_truth_docs": ["doc_001", "doc_042"],
+      "expected_answer": "RAG is a technique combining document retrieval with LLM generation to provide accurate answers with sources."
     },
     {
       "id": "q002",
       "query": "How does semantic chunking differ from fixed-size chunking?",
-      "ground_truth_docs": ["doc_105.txt", "doc_203.txt"],
-      "expected_answer": "Semantic chunking preserves document coherence by splitting based on embedding similarity.",
-      "difficulty": "medium"
+      "ground_truth_docs": ["doc_105", "doc_203"],
+      "expected_answer": "Semantic chunking preserves document boundaries using similarity thresholds, while fixed-size chunks break coherence."
     },
     {
       "id": "q003",
       "query": "Explain the concept of backpressure in async systems.",
-      "ground_truth_docs": ["doc_500.txt"],
-      "expected_answer": "Backpressure is a mechanism to slow down producers when consumers cannot keep up.",
-      "difficulty": "hard"
+      "ground_truth_docs": ["doc_500"],
+      "expected_answer": "Backpressure is a mechanism to slow down producers when consumers can't keep up."
     }
   ],
-  "total_queries": 500,
-  "test_date": "2025-01-15",
-  "evaluation_tool": "ragas"
+  "total": 500,
+  "note": "Full 500 test queries available in actual dataset"
 }

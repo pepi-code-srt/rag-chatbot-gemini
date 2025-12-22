@@ -1,0 +1,22 @@
+[
+    {
+        "query": "What is Retrieval Augmented Generation?",
+        "ground_truth": [
+            "doc_001",
+            "doc_042"
+        ]
+    },
+    {
+        "query": "How does semantic chunking differ from fixed-size chunking?",
+        "ground_truth": [
+            "doc_105",
+            "doc_203"
+        ]
+    },
+    {
+        "query": "Explain the concept of backpressure in async systems.",
+        "ground_truth": [
+            "doc_500"
+        ]
+    }
+]
